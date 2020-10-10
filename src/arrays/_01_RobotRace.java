@@ -79,14 +79,14 @@ public class _01_RobotRace {
 			Random runs = new Random();
 			robots[r].setSpeed(10);
 			robots[r].move(runs.nextInt(100));
-			if(robots[r].getX()>500||robots[r].getY()>200) {
+			if(robots[r].getX()>500) {
 				robots[r].turn(45);
-				robots[r].move(runs.nextInt(50));
+				robots[r].move(75);
 				
 			}
-			if(robots[r].getX()<200) {
+			if(robots[r].getX()<100) {
 				robots[r].turn(45);
-				robots[r].move(runs.nextInt(50));
+				robots[r].move(50);
 				
 				
 			}
